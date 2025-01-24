@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PendingCounter from "./PendingCounter";
 
 const Nav=()=>{
     return(
@@ -7,7 +8,7 @@ const Nav=()=>{
             <h1>Todo</h1>
             <nav className="nav">
                 <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/pending">Pending</Link>
+                <Link className="nav-link" to="/pending">Pending (<PendingCounter/>)</Link>
                 <Link className="nav-link" to="/status">Status</Link>
             </nav>
         </div></>
